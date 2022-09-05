@@ -83,8 +83,6 @@ class SimplePipModePlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
       } else {
         result.error("NotImplemented", "System Version less than Android S found", "Expected Android S or newer.")
       }
-    } else {
-      result.notImplemented()
     }
   }
 
