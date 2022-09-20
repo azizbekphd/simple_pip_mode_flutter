@@ -73,7 +73,6 @@ class SimplePip {
       _channel.setMethodCallHandler(
         (call) async {
           if (call.method == 'onPipEntered') {
-            DartPluginRegistrant.ensureInitialized();
             onPipEntered?.call();
           } else if (call.method == 'onPipExited') {
             onPipExited?.call();
